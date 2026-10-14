@@ -14,12 +14,25 @@ export default function Page() {
         <p>A Muxima é o maior santuário mariano da África Subsaariana e o principal centro de peregrinação de Angola. Na Grande Peregrinação anual, de 31 de agosto a 7 de setembro, fiéis de todas as províncias caminham — a pé, de camioneta, de barco pelo Kwanza — para rezar junto da sua Mãe.</p>
         <h2>Missão</h2>
         <p>Ser casa de oração e de acolhimento para todo o povo de Deus: celebrar os sacramentos, guardar a memória de quatro séculos de fé, acompanhar os peregrinos — sobretudo os mais pobres — e anunciar, com Maria, o Evangelho no coração de Angola.</p>
-        <div className="btns"><Link className="btn" href="/historia">História</Link><Link className="btn" href="/basilica">Nova Basílica</Link></div>
+        <div className="btns">
+          <Link className="btn" href="/historia">História</Link>
+          <Link className="btn" href="/basilica">Nova Basílica</Link>
+          <Link className="btn ghost" href="/responsaveis">Diocese e Responsáveis</Link>
+        </div>
       </div>
       <div>
         <Figure src="/img/igreja/muxima.jpg" alt="Complexo do Santuário da Muxima" legenda="O complexo do Santuário." />
         <table><tbody>
-          {[["Designação", SITE.nome], ["Invocação popular", SITE.invocacao], ["Localização", "Vila da Muxima, Quiçama, Icolo e Bengo"], ["Coordenadas", SITE.coordenadas.texto], ["Fundação", "1599"], ["Diocese", `Viana (Bispo: D. Emílio Sumbelelo)`], ["Classificação", "Monumento Nacional (1924)"]].map(([k, v]) => <tr key={k}><th scope="row">{k}</th><td>{v}</td></tr>)}
+          {[
+            ["Designação", SITE.nome],
+            ["Invocação popular", SITE.invocacao],
+            ["Localização", "Vila da Muxima, Quiçama, Icolo e Bengo"],
+            ["Coordenadas", SITE.coordenadas.texto],
+            ["Fundação", "1599"],
+            ["Reitor", "Padre Mpindi Alberto"],
+            ["Diocese", "Viana (Bispo: D. Emílio Sumbelelo)"],
+            ["Classificação", "Monumento Nacional (1924)"],
+          ].map(([k, v]) => <tr key={k}><th scope="row">{k}</th><td>{v}</td></tr>)}
         </tbody></table>
       </div>
     </div></section></>);

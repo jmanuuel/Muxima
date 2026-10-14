@@ -16,7 +16,7 @@ const ACESSOS = [
 export default function Home() {
   return (
     <>
-      <section className="hero"><div className="wrap">
+      <section className="hero hero-home"><div className="wrap">
         <div>
           <p className="eyebrow">Santuário de Nossa Senhora da Conceição · desde 1599</p>
           <h1>Muxima</h1>

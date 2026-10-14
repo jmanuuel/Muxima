@@ -56,3 +56,48 @@ table{width:100%;border-collapse:collapse;background:var(--white);font-size:.95r
 .legal{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding:1.2rem 0;font-size:.85rem}
 iframe.map{width:100%;height:380px;border:1px solid var(--line)}
 ol.passos{padding-left:1.2rem}ol.passos li{margin-bottom:.6rem}
+
+/* Hero com imagem de fundo da Procissão */
+.hero-home{position:relative;background-image:url("/img/procissao-hero.webp");background-position:center 32%;background-size:cover;background-repeat:no-repeat;isolation:isolate}
+.hero-home::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,26,51,0.92) 0%,rgba(16,40,74,0.85) 45%,rgba(10,26,51,0.94) 100%);z-index:1}
+.hero-home .wrap{position:relative;z-index:2}
+
+/* Responsáveis com fotos */
+.card-responsavel{display:flex;flex-direction:column;gap:.75rem}
+.responsavel-header{display:flex;align-items:center;gap:1.2rem;margin-bottom:.5rem}
+.responsavel-foto{position:relative;width:96px;height:114px;border-radius:6px;overflow:hidden;border:2px solid var(--gold);flex-shrink:0;box-shadow:0 4px 14px rgba(10,26,51,.18)}
+.responsavel-header h2{margin:0;font-size:1.35rem}
+.responsavel-header .meta{margin:0 0 .2rem}
+
+/* Secção do Desenvolvedor no Rodapé */
+.dev-wrapper{padding:0 0 2rem;border-top:1px solid rgba(255,255,255,0.08);margin-top:1rem}
+.dev-card{background:rgba(255,255,255,0.04);border:1px solid rgba(212,180,106,0.3);border-left:4px solid var(--gold);padding:1.2rem 1.5rem;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;border-radius:4px}
+.dev-avatar{position:relative;width:72px;height:72px;border-radius:10px;overflow:hidden;border:2px solid var(--gold-soft);flex-shrink:0;box-shadow:0 3px 10px rgba(0,0,0,0.3)}
+.dev-foto{object-fit:cover}
+.dev-info{flex:1;min-width:240px}
+.dev-badge{display:inline-block;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:700;color:var(--gold-soft);margin-bottom:.2rem}
+.dev-name{margin:0;font:600 1.15rem var(--serif);color:#fff}
+.dev-desc{margin:.2rem 0 .6rem;font-size:.85rem;color:#b6c2d7}
+.dev-links{display:flex;gap:1.2rem;flex-wrap:wrap}
+.dev-link{display:inline-flex;align-items:center;gap:.4rem;color:#e1e7f3;text-decoration:none;font-size:.82rem;font-weight:600}
+.dev-link:hover{color:var(--gold-soft);text-decoration:underline}
+
+/* Galeria Interativa com Lightbox */
+.figure-clicavel{cursor:pointer;position:relative;transition:transform .2s ease}
+.figure-clicavel:hover{transform:translateY(-3px)}
+.figure-clicavel .overlay-lupa{position:absolute;top:.7rem;right:.7rem;background:rgba(16,40,74,0.75);color:#fff;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;opacity:0;transition:opacity .2s ease;pointer-events:none}
+.figure-clicavel:hover .overlay-lupa{opacity:1}
+.lightbox-backdrop{position:fixed;inset:0;background:rgba(8,16,30,0.94);z-index:100;display:grid;place-items:center;padding:1.5rem;backdrop-filter:blur(6px)}
+.lightbox-content{position:relative;max-width:min(1100px,96vw);max-height:92vh;display:flex;flex-direction:column;align-items:center}
+.lightbox-imagem-wrap{position:relative;width:min(90vw,1000px);height:min(72vh,700px);max-height:75vh}
+.lightbox-fechar{position:absolute;top:-2.5rem;right:0;background:transparent;border:0;color:#fff;font-size:1.8rem;cursor:pointer;padding:.4rem;line-height:1}
+.lightbox-fechar:hover{color:var(--gold)}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(16,40,74,0.7);color:#fff;border:1px solid rgba(212,180,106,0.5);width:3.2rem;height:3.2rem;border-radius:50%;font-size:2rem;display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s;z-index:10}
+.lightbox-nav:hover{background:var(--gold);color:var(--navy)}
+.lightbox-prev{left:-1.2rem}
+.lightbox-next{right:-1.2rem}
+@media(max-width:768px){.lightbox-prev{left:.5rem}.lightbox-next{right:.5rem}}
+.lightbox-rodape{display:flex;justify-content:space-between;align-items:center;width:100%;color:#d6deec;font-size:.88rem;margin-top:.8rem;gap:1rem}
+.lightbox-contador{background:rgba(255,255,255,0.1);padding:.2rem .6rem;border-radius:3px;font-size:.8rem;color:var(--gold-soft);font-weight:600}
+.lightbox-legenda{margin:0;flex:1;text-align:right}
+

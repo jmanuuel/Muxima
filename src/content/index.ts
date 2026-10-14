@@ -122,11 +122,62 @@ export function oracaoDoDia(data = new Date()) {
 }
 
 export const NOTICIAS = [
-  { slug: "balanco-romaria", data: "2027-09-12", cat: "Grande Peregrinação", titulo: "Balanço da 195.ª Grande Peregrinação", texto: "Terminou a Grande Peregrinação, com fiéis de todas as províncias e da diáspora, procissão das velas com a imagem coroada e missa campal de encerramento. O Santuário agradece a cada peregrino, voluntário e comunidade." },
-  { slug: "ano-pastoral", data: "2027-09-17", cat: "Pastoral", titulo: "Lançado o Ano Pastoral 2027/2028", texto: "Sob o lema «Fazei tudo o que Ele vos disser» (Jo 2,5), o Santuário e as comunidades da Quiçama iniciam o novo ano de caminhada." },
-  { slug: "cartorio-horario", data: "2027-09-10", cat: "Santuário", titulo: "Cartório retoma o horário regular", texto: "Concluído o esforço extraordinário da romaria, o cartório volta ao atendimento de seg–sex 08h00–12h00 e 14h00–16h30, sáb 09h00–12h00." },
-  { slug: "cobertura-basilica", data: "2027-09-05", cat: "Nova Basílica", titulo: "Começou a cobertura da nova Basílica", texto: "A Fase 3 arrancou: gruas e primeiras peças da cobertura dominam já o horizonte da vila. Consagração prevista para 2029." },
-  { slug: "voluntarios", data: "2027-09-02", cat: "Voluntariado", titulo: "Mais de mil voluntários serviram a romaria", texto: "Acolhimento, saúde, logística e cantina: o serviço discreto dos voluntários sustentou a Grande Peregrinação." },
+  {
+    slug: "balanco-romaria",
+    data: "2026-09-12",
+    cat: "Grande Peregrinação",
+    titulo: "Balanço da Grande Peregrinação 2026",
+    texto: "Terminou com grande júbilo a peregrinação anual, reunindo fiéis de todas as províncias de Angola e da diáspora, com solene Procissão das Velas e Missa campal de encerramento.",
+    corpo: [
+      "A Vila da Muxima viveu dias intensos de oração, esperança e comunhão filial junto de Nossa Senhora da Conceição (Mama Muxima). Caravanas de peregrinos vindas de Luanda, Benguela, Huambo, Uíge, Cabinda e de todo o território nacional encheram a esplanada sagrada.",
+      "O ponto alto foi vivido com a tradicional Procissão das Velas, onde a imagem de Mama Muxima percorreu o recinto sob um mar de luzes e cânticos de louvor. O Reitor do Santuário, Padre Mpindi Alberto, e o Bispo da Diocese de Viana, D. Emílio Sumbelelo, agradeceram a disciplina espiritual e a devoção exemplar demonstrada por cada devoto.",
+      "A organização destacou igualmente o papel fundamental das forças de ordem, equipas de saúde, escuteiros e de mais de um milhar de voluntários que garantiram a tranquilidade e a segurança do evento."
+    ],
+  },
+  {
+    slug: "ano-pastoral",
+    data: "2026-09-17",
+    cat: "Pastoral",
+    titulo: "Lançado o Novo Ano Pastoral no Santuário",
+    texto: "Sob o lema «Fazei tudo o que Ele vos disser» (Jo 2,5), o Santuário e as comunidades da Quiçama iniciam um novo ciclo de missão e acolhimento aos devotos.",
+    corpo: [
+      "A Diocese de Viana e a equipa pastoral do Santuário da Muxima proclamaram as diretrizes para o novo ano litúrgico e pastoral. A prioridade recai sobre o reforço do acolhimento aos peregrinos, a formação contínua dos catequistas e a assistência espiritual aos enfermos.",
+      "Estão previstos retiros espirituais periódicos, encontros mensais de formação para ministros extraordinários da comunhão e o fortalecimento das obras sociais da Caritas local em apoio às famílias mais desfavorecidas da bacia do Kwanza."
+    ],
+  },
+  {
+    slug: "cobertura-basilica",
+    data: "2026-09-05",
+    cat: "Nova Basílica",
+    titulo: "Avanço estrutural nas obras da Nova Basílica",
+    texto: "A cobertura e as fachadas da futura Basílica ganham forma no horizonte da vila, consolidando o projeto de acolhimento para 5.000 fiéis sentados.",
+    corpo: [
+      "Os trabalhos de construção da Nova Basílica de Nossa Senhora da Muxima alcançam um marco decisivo com o avanço da montagem da cobertura exterior, cujas linhas arquitetónicas homenageiam os tecidos e a cultura de Angola.",
+      "O templo foi projetado para responder ao crescimento contínuo do fluxo de peregrinos, oferecendo capacidade interna para 5.000 fiéis e uma esplanada com infraestrutura para mais de 20.000 pessoas em celebrações campais."
+    ],
+  },
+  {
+    slug: "cartorio-horario",
+    data: "2026-09-10",
+    cat: "Santuário",
+    titulo: "Cartório retoma o horário de atendimento regular",
+    texto: "Concluído o período extraordinário da romaria de setembro, o cartório retoma os horários normais para marcação de missas, intenções e escuta pastoral.",
+    corpo: [
+      "O cartório paroquial e administrativo do Santuário volta ao seu funcionamento habitual de segunda a sexta-feira, das 08h00 às 12h00 e das 14h00 às 16h30, e aos sábados das 09h00 às 12h00.",
+      "Os fiéis podem apresentar pedidos de certidões, marcação de batizados, marcação de missas com intenção particular e inscrição nos grupos de voluntariado presencialmente ou através dos contactos oficiais do sítio."
+    ],
+  },
+  {
+    slug: "voluntarios",
+    data: "2026-09-02",
+    cat: "Voluntariado",
+    titulo: "O testemunho generoso dos voluntários da Muxima",
+    texto: "Acolhimento, primeiros socorros, orientação de multidões e liturgia: o serviço abnegado sustentou a recepção a multidões de fiéis.",
+    corpo: [
+      "Mais de mil voluntários, maioritariamente jovens de várias paróquias da Diocese de Viana e membros de congregações religiosas, doaram o seu tempo e energia durante os dias da peregrinação.",
+      "«Servir na Muxima é encontrar Jesus no rosto do peregrino cansado», testemunhou um dos jovens da coordenação. As inscrições para voluntários mantêm-se abertas ao longo do ano para as celebrações mensais."
+    ],
+  },
 ] as const;
 
 export const IMAGENS = [
