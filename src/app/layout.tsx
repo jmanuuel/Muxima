@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 import { SITE } from "@/config/site";
 import "./globals.css";
 
@@ -26,6 +28,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-AO">
       <body>
         <a className="skip" href="#conteudo">Saltar para o conteúdo</a>
+        <Suspense fallback={null}>
+          <AnalyticsTracker />
+        </Suspense>
         <Header />
         <main id="conteudo">{children}</main>
         <Footer />
